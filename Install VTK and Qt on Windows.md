@@ -58,7 +58,7 @@ It is a little cumbersom to compile VTK and Qt on Windows, different versions of
 
       -------> open project
 
-      5. ![image-20200410173437488](pic\image-20200410173437488.png)
+      5. ![image-20200410173437488](pic/image-20200410173437488.png)
 
          choose ALL_BUILD and click **build**
 
@@ -82,11 +82,11 @@ It is a little cumbersom to compile VTK and Qt on Windows, different versions of
 
          8. **cmake** first, configure and generate
 
-![image-20200410174944804](pic\image-20200410174944804.png)
+![image-20200410174944804](pic/image-20200410174944804.png)
 
 ​						 9. openproject then  build
 
-![image-20200410175338161](pic\image-20200410175338161.png)
+![image-20200410175338161](pic/image-20200410175338161.png)
 
 It works!
 
