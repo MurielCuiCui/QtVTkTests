@@ -1,5 +1,5 @@
 
-cmake_minimum_required(VERSION 3.3 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 
 if(POLICY CMP0020)
   cmake_policy(SET CMP0020 NEW)
@@ -9,7 +9,7 @@ endif()
 PROJECT(RenderWindowUIMultipleInheritance)
 
 find_package(VTK COMPONENTS
-  
+
   vtkCommonColor
   vtkCommonCore
   vtkFiltersSources
@@ -19,9 +19,9 @@ find_package(VTK COMPONENTS
   vtkRenderingFreeType
   vtkRenderingGL2PSOpenGL2
   vtkRenderingOpenGL2
-  vtkGUISupportQt 
+  vtkGUISupportQt
   QUIET
-  
+
 )
 
 if (NOT VTK_FOUND)
@@ -54,7 +54,7 @@ file(GLOB QT_WRAP *.h)
 file(GLOB CXX_FILES *.cxx)
 
 # 产生ui头文件
-qt5_wrap_ui(UISrcs ${UI_FILES}) 
+qt5_wrap_ui(UISrcs ${UI_FILES})
 
 if (VTK_VERSION VERSION_LESS "8.90.0")
   # old system
